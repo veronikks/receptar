@@ -1,5 +1,5 @@
 import os.path
-
+import os
 
 def nacti_recept(jmeno):
     """
@@ -13,11 +13,9 @@ def nacti_recept(jmeno):
     with open(cesta_k_receptu, 'r', encoding='utf-8') as f:
         return f.read()
 
+print(nacti_recept('titulek.txt'))
 
-NAZVY_RECEPTU = [
-    'chlebova_pochoutka.txt',
-]
+NAZVY_RECEPTU = os.listdir('recepty')
 
-
-# Máme zatím jen jeden recept, tak ho prostě ukážeme
-print(nacti_recept(NAZVY_RECEPTU[0]))
+for recept in NAZVY_RECEPTU:
+    print(nacti_recept(recept))
