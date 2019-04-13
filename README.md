@@ -13,4 +13,8 @@ dostupné na: https://github.com/hroncok/receptar
 
 ======================================================
 
+Opensource receptář.
+
+Přidej recept v .txt do /recepty.
+
 Work in progress.
