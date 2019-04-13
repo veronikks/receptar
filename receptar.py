@@ -18,6 +18,7 @@ NAZVY_RECEPTU = [
     'chlebova_pochoutka.txt',
 ]
 
+print(nacti_recept('titulek.txt'))
 
 # Máme zatím jen jeden recept, tak ho prostě ukážeme
 print(nacti_recept(NAZVY_RECEPTU[0]))
